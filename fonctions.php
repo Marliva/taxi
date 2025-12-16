@@ -12,3 +12,13 @@ function dd($data) {
     echo '</pre>';
     die();
 }
+
+function listerVehicules($pdo) {
+    $sql = "SELECT * FROM vehicule";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute();
+    $vehicules = $stmt->fetchAll();
+    return [
+        'vehicules' => $vehicules
+    ];
+}
