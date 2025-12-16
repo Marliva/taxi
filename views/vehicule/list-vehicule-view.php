@@ -34,6 +34,9 @@
                         Couleur
                     </th>
                     <th>
+                        Immatriculation
+                    </th>
+                    <th>
                         Actions
                     </th>
                 </tr>
@@ -49,6 +52,9 @@
                         </td>
                         <td>
                             <?= $car['couleur'] ?>
+                        </td>
+                        <td>
+                            <?= $car['immatriculation'] ?>
                         </td>
                         <td>
                             <a href="<?= WEB_ROOT . '/vehicule/edit-vehicule.php?id=' . $car['id_vehicule'] ?>"><button class="outline primary">Modifier</button></a>

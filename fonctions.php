@@ -23,3 +23,9 @@ function listerVehicules($pdo) {
     $vehicules = $stmt->fetchAll();
     return $vehicules;
 }
+
+function nettoyer($dataParam) {
+    $data = trim($dataParam);
+    $data = htmlspecialchars($data, ENT_QUOTES, 'UTF-8');
+    return $data;
+}
