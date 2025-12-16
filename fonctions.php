@@ -1,5 +1,8 @@
 <?php
 
+define("PATH_PROJET", $_SERVER['DOCUMENT_ROOT'] ."/taxis");
+define("WEB_ROOT", "/taxis");
+
 function dg($data) {
     echo '<pre style="background-color:black; color:white;padding: 1rem;">';
     var_dump($data);
@@ -18,7 +21,5 @@ function listerVehicules($pdo) {
     $stmt = $pdo->prepare($sql);
     $stmt->execute();
     $vehicules = $stmt->fetchAll();
-    return [
-        'vehicules' => $vehicules
-    ];
+    return $vehicules;
 }
