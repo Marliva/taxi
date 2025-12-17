@@ -19,8 +19,7 @@
             die();
         endif;
         ?>
-        <h1>Liste des véhicules</h1>
-        <a href="<?= WEB_ROOT . '/vehicule/add-vehicule.php' ?>"><button class="outline primary">Ajouter un véhicule</button></a>
+        <h1 style="text-align: center;">Liste des véhicules</h1>
         <table>
             <thead>
                 <tr>
@@ -65,6 +64,7 @@
                 <?php endforeach; ?>
             </tbody>
         </table>
+        <a href="<?= WEB_ROOT . '/vehicule/add-vehicule.php' ?>"><button class="outline primary">Ajouter un véhicule</button></a>
     </main>
 </body>
 
