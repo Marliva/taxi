@@ -13,29 +13,30 @@
 <body>
     <main class="container">
         <h1>Modifier un véhicule</h1>
-        <form action="" method="post">
+        <form action="?id=<?= $vehicule['id_vehicule']; ?>" method="post">
 
             <div>
                 <label for="marque">Marque</label>
-                <input type="text" name="marque" id="marque">
+                <input type="text" name="marque" value="<?= $vehicule['marque']; ?>">
             </div>
 
             <div>
                 <label for="modele">Modèle</label>
-                <input type="text" name="modele" id="modele">
+                <input type="text" name="modele" value="<?= $vehicule['modele']; ?>">
             </div>
 
             <div>
                 <label for="couleur">Couleur</label>
-                <input type="text" name="couleur" id="couleur">
+                <input type="text" name="couleur" value="<?= $vehicule['couleur']; ?>">
             </div>
 
             <div>
                 <label for="immatriculation">Immatriculation</label>
-                <input type="text" name="immatriculation" id="immatriculation">
+                <input type="text" name="immatriculation" value="<?= $vehicule['immatriculation']; ?>">
             </div>
 
-            <button type="submit" name="envoyer">Ajouter</button>
+            <button type="submit" name="envoyer">Modifier</button>
+            <button type="reset" name="annuler">Annuler</button>
         </form>
 
 
