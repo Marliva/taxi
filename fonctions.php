@@ -148,12 +148,3 @@ function modifierDriver($pdo, $nomParam, $prenomParam, $idParam)
 
     return $test;
 }
-
-function supprimerDriver($pdo, $idParam)
-{
-    $sql = "DELETE FROM conducteur WHERE id_conducteur = :id";
-    $stmt = $pdo->prepare($sql);
-    $stmt->execute([
-        ':id' => $idParam
-    ]);
-}

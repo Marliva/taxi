@@ -45,7 +45,7 @@
                         </td>
                         <td>
                             <a href="<?= WEB_ROOT . '/vehicule/edit-driver.php?id=' . $driver['id_conducteur'] ?>"><button class="outline primary">Modifier</button></a>
-                            <a href="<?= WEB_ROOT . '/vehicule/del-driver.php?id=' . $driver['id_conducteur'] ?>" onclick="return confirm('Voulez-vous vraiment supprimer ce chauffeur ?')"><button class="outline secondary">Supprimer</button></a>
+                            <a href="<?= WEB_ROOT . '/driver/del-driver.php?id=' . $driver['id_conducteur'] ?>" onclick="return confirm('Voulez-vous vraiment supprimer ce chauffeur ?')"><button class="outline secondary">Supprimer</button></a>
                         </td>
 
                     </tr>
