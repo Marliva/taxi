@@ -2,7 +2,7 @@
 
 <footer>
     <hr>
-    <p>2025 - Taxis</p>
+    <p style="text-align: center;">2025 - Taxis</p>
 </footer>
 
 </body>
