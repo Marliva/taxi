@@ -1,4 +1,5 @@
 <?php
+$titleTaxis = 'Ajouter un chauffeur';
 require PATH_PROJET . '/views/partials/header.php';
 ?>
         <h1>Ajouter un chauffeur</h1>

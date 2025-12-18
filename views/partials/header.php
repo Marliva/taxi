@@ -8,7 +8,7 @@
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
     <link rel="stylesheet" href="<?php WEB_ROOT ?>/assets/css/style.css">
-    <title><?php $titleTaxis ?></title>
+    <title><?= $titleTaxis ?></title>
 </head>
 
 <body>

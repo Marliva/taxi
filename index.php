@@ -1,4 +1,5 @@
 <?php
+$titleTaxis = 'Dashboard';
 include 'fonctions.php';
 require 'connexiondb.php';
 

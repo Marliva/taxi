@@ -1,4 +1,5 @@
 <?php
+$titleTaxis = 'Liste des chauffeurs';
 require PATH_PROJET . '/views/partials/header.php';
 
 if (count($driverArray) === 0) :
