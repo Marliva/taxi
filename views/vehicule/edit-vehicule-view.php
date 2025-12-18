@@ -1,19 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    <link rel="stylesheet" href="<?= WEB_ROOT ?>/assets/css/style.css">
-
-    <title>Modifier un véhicule</title>
-</head>
-
-<body>
-    <main class="container">
+<?php
+require PATH_PROJET . '/views/partials/header.php';
+?>
         <h1>Modifier un véhicule</h1>
         <form action="?id=<?= $vehicule['id_vehicule']; ?>" method="post">
 
@@ -40,10 +27,6 @@
             <button type="submit" name="envoyer">Modifier</button>
             <button type="reset" name="annuler">Annuler</button>
         </form>
-
-
-    </main>
-
-</body>
-
-</html>
+<?php
+include PATH_PROJET . '/views/partials/footer.php';
+?>
