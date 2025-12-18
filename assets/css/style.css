@@ -48,7 +48,8 @@ nav .container {
 
 
 #stat {
-    align-self: center;
+    width: 90%;
+    margin-left: 5%;
 }
 
 table {
