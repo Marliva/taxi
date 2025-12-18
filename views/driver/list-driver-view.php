@@ -7,6 +7,7 @@
     <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="<?= WEB_ROOT ?>/assets/css/style.css">
     <title>Chauffeurs</title>
 </head>
 
@@ -52,7 +53,9 @@
                 <?php endforeach; ?>
             </tbody>
         </table>
-        <a href="<?= WEB_ROOT . '/driver/add-driver.php' ?>"><button class="outline primary">Ajouter un chauffeur</button></a>
+        <div id="addButton">
+            <a href="<?= WEB_ROOT . '/driver/add-driver.php' ?>"><button class="outline primary">Ajouter un chauffeur</button></a>
+        </div>
     </main>
 </body>
 

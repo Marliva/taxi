@@ -7,6 +7,7 @@
     <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link rel="stylesheet" href="<?= WEB_ROOT ?>/assets/css/style.css">
     <title>Véhicules</title>
 </head>
 
@@ -19,7 +20,7 @@
             die();
         endif;
         ?>
-        <h1 style="text-align: center;">Liste des véhicules</h1>
+        <h1>Liste des véhicules</h1>
         <table>
             <thead>
                 <tr>
@@ -64,7 +65,9 @@
                 <?php endforeach; ?>
             </tbody>
         </table>
-        <a href="<?= WEB_ROOT . '/vehicule/add-vehicule.php' ?>"><button class="outline primary">Ajouter un véhicule</button></a>
+        <div id="addButton">
+            <a href="<?= WEB_ROOT . '/vehicule/add-vehicule.php' ?>"><button class="outline primary">Ajouter un véhicule</button></a>
+        </div>
     </main>
 </body>
 
