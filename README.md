@@ -62,7 +62,7 @@
 | **"7**             | "Roux"       | "Julie""      |           |                    |
 | **"8**             | "Moreau"     | "Thomas""     |           |                    |
 | **"9**             | "Simon"      | "Laura""      |           |                    |
-| **"id_vehicule**   | "marque"     | "modele"      | "couleur" | "immatriculation"" |
+| **"id_vehicule**   | **"marque"**     | **"modele"**      | **"couleur"** | **"immatriculation""** |
 | **"11**            | "Renault"    | "Scenic"      | "rouge"   | "DD-456-ZZ""       |
 | **"12**            | "Citroën"    | "C8"          | "bleu"    | "AB-123-CD""       |
 | **"13**            | "Mercedes"   | "CLS"         | "noir"    | "EF-789-GH""       |
