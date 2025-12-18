@@ -148,3 +148,15 @@ function modifierDriver($pdo, $nomParam, $prenomParam, $idParam)
 
     return $test;
 }
+
+function createDatabase($pdo,$sqlfile)
+{
+    $query = file_get_contents($sqlfile);
+    $pdo->exec($query);
+}
+
+function redirect($url)
+{
+    header('Location: ' . WEB_ROOT . $url);
+    exit;
+}

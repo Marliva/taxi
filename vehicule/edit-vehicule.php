@@ -23,8 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['envoyer'])) {
     $testUpate = modifierVehicule($pdo, $marque, $modele, $couleur, $immatriculation, $idEdit);
 
     // dg($testUpate);
-    header('Location: ' . WEB_ROOT . '/vehicule/list-vehicule.php');
-    exit;
+    redirect('/vehicule/list-vehicule.php');
 }
 
 

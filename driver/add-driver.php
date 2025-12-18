@@ -15,7 +15,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['envoyer'])) {
     $driverInserted = getLastInsertId($pdo);
 
     if ($driverInserted) {
-        header('Location: ' . WEB_ROOT . '/driver/list-driver.php');
+        redirect('/driver/list-driver.php');
     }
     exit;
 }

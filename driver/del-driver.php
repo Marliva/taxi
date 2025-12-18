@@ -14,8 +14,7 @@ $stm->bindParam(':id', $idSuppDriver, PDO::PARAM_INT);
 $suppResult = $stm->execute();
 
 if ($suppResult === true) {
-    header("Location: " . WEB_ROOT . "/driver/list-driver.php");
-    exit;
+    redirect('/driver/list-driver.php');
 }
 
 // dd($suppResult);

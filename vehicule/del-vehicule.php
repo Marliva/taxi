@@ -14,8 +14,7 @@ $stm->bindParam(':id', $idSupp, PDO::PARAM_INT);
 $suppResult = $stm->execute();
 
 if ($suppResult === true) {
-    header("Location: " . WEB_ROOT . "/vehicule/list-vehicule.php");
-    exit;
+    redirect('/vehicule/list-vehicule.php');
 }
 
 // dd($suppResult);

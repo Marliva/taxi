@@ -20,8 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['envoyer'])) {
 
     $testUpate = modifierDriver($pdo, $nom, $prenom, $idEdit);
     // dg($testUpate);
-    header('Location: ' . WEB_ROOT . '/driver/list-driver.php');
-    exit;
+    redirect('/driver/list-driver.php');
 }
 
 
