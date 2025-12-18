@@ -73,3 +73,8 @@ table td {
     width: 90%;
     margin : 0 auto;
 }
+
+tbody td .outline.primary,
+tbody td .outline.secondary {
+    width: 49%;
+}
