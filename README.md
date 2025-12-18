@@ -62,7 +62,9 @@
 | **"7**             | "Roux"       | "Julie""      |           |                    |
 | **"8**             | "Moreau"     | "Thomas""     |           |                    |
 | **"9**             | "Simon"      | "Laura""      |           |                    |
+
 | **"id_vehicule**   | **"marque"**     | **"modele"**      | **"couleur"** | **"immatriculation""** |
+|--------------------|--------------|---------------|-----------|--------------------|
 | **"11**            | "Renault"    | "Scenic"      | "rouge"   | "WW-011-WW""       |
 | **"12**            | "Citroën"    | "C8"          | "bleu"    | "WW-012-WW""       |
 | **"13**            | "Mercedes"   | "CLS"         | "noir"    | "WW-013-WW""       |
