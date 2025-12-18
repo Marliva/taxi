@@ -2,7 +2,26 @@
 include 'fonctions.php';
 require 'connexiondb.php';
 ?>
-<a href="./vehicule/list-vehicule.php">Liste des véhicules</a>
-<a href="./driver/list-driver.php">Liste des chauffeurs</a>
-<p>Nombre de vehicules : <?= getNbLigneTable($pdo, 'vehicule') ?></p>
-<p>Nombre de chauffeurs : <?= getNbLigneTable($pdo, 'conducteur') ?></p>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Dashboard</h1>
+    <a href="./vehicule/list-vehicule.php" role="button">Liste des véhicules</a>
+    <a href="./driver/list-driver.php" role="button">Liste des chauffeurs</a>
+    <p>Nombre de vehicules : <?= getNbLigneTable($pdo, 'vehicule') ?></p>
+    <p>Nombre de chauffeurs : <?= getNbLigneTable($pdo, 'conducteur') ?></p>
+
+</body>
+
+</html>
