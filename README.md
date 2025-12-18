@@ -18,10 +18,13 @@
 │   index.php
 │   README.md
 │   taxis.sql
-│   
+│
 ├───assets
-│   └───css
-│           style.css
+│   ├───css
+│   │       style.css
+│   │
+│   └───img
+│           logo.jpg
 │
 ├───driver
 │       add-driver.php
@@ -40,6 +43,11 @@
     │       add-driver-view.php
     │       edit-driver-view.php
     │       list-driver-view.php
+    │
+    ├───partials
+    │       footer.php
+    │       header.php
+    │       nav.php
     │
     └───vehicule
             add-vehicule-view.php
