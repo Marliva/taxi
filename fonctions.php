@@ -21,6 +21,12 @@ function dd($data)
     die();
 }
 
+// ===============================================
+// CRUD vehicule
+// ===============================================
+
+
+
 function listerVehicules($pdo)
 {
     $sql = "SELECT * FROM vehicule ORDER BY id_vehicule ASC";
@@ -93,4 +99,61 @@ function getNbLigneTable($pdo, $table)
     $stmt->execute();
     $count = $stmt->fetchColumn();
     return $count;
+}
+
+
+// ================================================================
+// CRUD de driver
+// ================================================================
+
+function listerDrivers($pdo)
+{
+    $sql = "SELECT * FROM conducteur ORDER BY id_conducteur ASC";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute();
+    $drivers = $stmt->fetchAll();
+    return $drivers;
+}
+
+function getDriver($pdo, $idParam)
+{
+    $sql = "SELECT * FROM conducteur WHERE id_conducteur = :id";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute([
+        'id' => $idParam
+    ]);
+    $driver = $stmt->fetch();
+    return $driver;
+}
+
+function ajoutDriver($pdo, $nomParam, $prenomParam)
+{
+    $sql = "INSERT INTO conducteur (nom, prenom) VALUES (:nom, :prenom)";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute([
+        ':nom'    => $nomParam,
+        ':prenom' => $prenomParam
+    ]);
+}
+
+function modifierDriver($pdo, $nomParam, $prenomParam, $idParam)
+{
+    $sql = "UPDATE conducteur SET nom = :nom, prenom = :prenom WHERE id_conducteur = :id";
+    $stmt = $pdo->prepare($sql);
+    $test = $stmt->execute([
+        ':id'      => $idParam,
+        ':nom'     => $nomParam,
+        ':prenom'  => $prenomParam
+    ]);
+
+    return $test;
+}
+
+function supprimerDriver($pdo, $idParam)
+{
+    $sql = "DELETE FROM conducteur WHERE id_conducteur = :id";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute([
+        ':id' => $idParam
+    ]);
 }
